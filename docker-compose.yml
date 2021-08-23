@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  storybook:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 6006:6006
+    volumes:
+      - ./lvup-fe/public:/home/node/storybook/public
+      - ./lvup-fe/src:/home/node/storybook/src
+      - ./.storybook:/home/node/storybook/.storybook
+      - ./stories-fe:/home/node/storybook/stories/stories-fe
