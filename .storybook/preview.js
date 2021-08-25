@@ -3,6 +3,7 @@ import clickOutside from "@/directive/clickOutside";
 import createStore from "@/store";
 import VueRouter from "vue-router";
 import scrollAgency from "@/plugins/scrollAgency";
+import 'swiper/swiper-bundle.css';
 // import i18n from "@/plugins/i18n";
 
 export const parameters = {
