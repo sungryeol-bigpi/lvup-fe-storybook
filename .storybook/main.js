@@ -1,7 +1,6 @@
 const path = require("path");
 const pathRoot = path.resolve(__dirname, "../src");
 require("dotenv").config();
-console.log("env", process.env.VUE_APP_SCREEN_MM, process.env.NODE_ENV);
 
 // vue.config.js에서 설정 복사해옴
 const {
