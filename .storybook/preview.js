@@ -1,4 +1,5 @@
 import Vue from "vue";
+import 'swiper/swiper-bundle.css';
 // import i18n from "@/plugins/i18n";
 
 export const parameters = {
