@@ -20,6 +20,7 @@ export const decorators = [
     // Vue.use(i18n);
 
     Vue.prototype.$t = (...args) => `$t-${args.join(",")}`;
+    Vue.prototype.$te = () => true;
     Vue.directive("clickOutside", clickOutside);
     const store = createStore();
     Vue.use(scrollAgency, { store });
