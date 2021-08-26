@@ -11,4 +11,4 @@ COPY ${FE_DIR}.env ./.env
 COPY ${FE_DIR}.env.development ./.env.development
 RUN npx sb init -f
 RUN yarn add -D dotenv
-CMD yarn storybook
+CMD yarn storybook -s ./public
