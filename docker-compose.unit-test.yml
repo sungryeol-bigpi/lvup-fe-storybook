@@ -13,3 +13,4 @@ services:
       - ./stories-fe:/home/node/storybook/stories/stories-fe
       - ./unit-test:/home/node/storybook/unit-test
       - ./jest.config.js:/home/node/storybook/jest.config.js
+    command: yarn jest

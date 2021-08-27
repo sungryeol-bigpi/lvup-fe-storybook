@@ -23,7 +23,10 @@ git clone https://...
 ```
 2. `docker-compose`를 이용해 도커 이미지를 빌드하고 실행한다
 ```sh
+# 스토리북
 docker-compose up
+# 유닛 테스트
+source unit-test.sh
 ```
 3. 캐시로 인한 에러를 방지하기 위해, 작업이 완료되면 생성된 임시 컨테이너를 정기적으로 삭제해준다.
 ```sh
