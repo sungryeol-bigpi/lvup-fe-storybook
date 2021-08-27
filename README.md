@@ -9,24 +9,24 @@ git clone https://...
 ├── Dockerfile
 ├── README.md
 ├── docker-compose.yml
-├── lvup-fe
-│   ├── README.md
-│   ├── babel.config.js
-│   ├── node_modules
-│   ├── package.json
-│   ├── public
-│   ├── server
-│   ├── src
-│   ├── vue.config.js
-│   └── yarn.lock
-└── stories
+├── jest.config.js
+├── lvup-fe # clone된 내용이 이 폴더에 있어야 한다
+│   └── ...
+├── stories-fe
+│   └── ...
+└── unit-test
+    └── ...
 ```
 2. `docker-compose`를 이용해 도커 이미지를 빌드하고 실행한다
 ```sh
 # 스토리북
 docker-compose up
-# 유닛 테스트
-source unit-test.sh
+# 유닛 테스트(서비스가 동작하고 있을때 사용 가능)
+docker-compose run storybook yarn jest
+# 또는 watch하면서 유닛 테스트
+docker-compose run storybook yarn jest --watchAll
+# 특정 파일만 유닛 테스트
+docker-compose run storybook yarn jest sample.test.js
 ```
 3. 캐시로 인한 에러를 방지하기 위해, 작업이 완료되면 생성된 임시 컨테이너를 정기적으로 삭제해준다.
 ```sh
