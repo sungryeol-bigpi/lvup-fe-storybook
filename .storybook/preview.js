@@ -3,6 +3,9 @@ import clickOutside from "@/directive/clickOutside";
 import createStore from "@/store";
 import VueRouter from "vue-router";
 import scrollAgency from "@/plugins/scrollAgency";
+import globalMixin from "@/mixins/global";
+import browser from "@/modules/Browser";
+// import store from './vuexStore'
 import "swiper/swiper-bundle.css";
 import "@/less/common.less";
 // import i18n from "@/plugins/i18n";
@@ -99,12 +102,19 @@ export const decorators = [
 
     Vue.prototype.$t = (...args) => `$t-${args.join(",")}`;
     Vue.prototype.$te = () => true;
+    Vue.prototype.$i18n = (key) => {
+      const i18nData = { lang: "ko", country: "kr" };
+      return i18nData[key] || "";
+    };
     Vue.directive("clickOutside", clickOutside);
     const store = createStore();
     Vue.use(scrollAgency, { store });
     Vue.use(VueRouter);
+    Vue.mixin(globalMixin);
+    browser.sync(store);
     return {
       components: { story },
+      store,
       template: `<story />`,
     };
   },
