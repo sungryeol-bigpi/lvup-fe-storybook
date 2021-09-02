@@ -10,6 +10,6 @@ services:
       - ./lvup-fe/public:/home/node/storybook/public
       - ./lvup-fe/src:/home/node/storybook/src
       - ./.storybook:/home/node/storybook/.storybook
-      - ./stories-fe:/home/node/storybook/stories/stories-fe
+      - ./stories:/home/node/storybook/stories
       - ./unit-test:/home/node/storybook/unit-test
       - ./jest.config.js:/home/node/storybook/jest.config.js
