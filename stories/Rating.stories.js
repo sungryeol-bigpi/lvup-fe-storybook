@@ -15,13 +15,13 @@ const Template = (args, { argTypes }) => ({
 });
 
 export const Zero = Template.bind({});
-Zero.args = { rating: 0 };
+Zero.args = { value: 0 };
 
 export const FourFive = Template.bind({});
-FourFive.args = { rating: 4.5 };
+FourFive.args = { value: 4.5 };
 
 export const Five = Template.bind({});
-Five.args = { rating: 5 };
+Five.args = { value: 5 };
 
 export const LargeNum = Template.bind({});
-LargeNum.args = { rating: 3.23543 };
+LargeNum.args = { value: 3.23543 };

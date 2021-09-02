@@ -101,6 +101,7 @@ export const decorators = [
     // Vue.use(i18n);
 
     Vue.prototype.$t = (...args) => `$t-${args.join(",")}`;
+    Vue.prototype.$date = Vue.prototype.$t
     Vue.prototype.$te = () => true;
     Vue.prototype.$i18n = (key) => {
       const i18nData = { lang: "ko", country: "kr" };
