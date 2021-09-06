@@ -1,5 +1,6 @@
 FROM node:14-alpine
 RUN git clone https://${GIT_ID}:${GIT_TOKEN}@$github.com/bigpicture-interactive/lvup-fe
+RUN git checkout $(cat feature-branch)
 # sb init으로 나오는 커맨드를 그대로 사용
 RUN mkdir -p /home/node/storybook
 WORKDIR /home/node/storybook
