@@ -3,7 +3,7 @@ services:
   storybook:
     build:
       context: .
-      dockerfile: ./Dockerfile
+      dockerfile: ./local.Dockerfile
     ports:
       - 6006:6006
     volumes:
