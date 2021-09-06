@@ -3,4 +3,4 @@ setup:
     FEATURE_BRANCH: COG-11-user-lesson
 build:
   docker:
-    web: heroku.heroku.Dockerfile
+    web: heroku.Dockerfile
