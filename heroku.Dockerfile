@@ -1,4 +1,5 @@
 FROM node:14-alpine
+RUN apk add --no-cache git
 RUN git clone https://${GIT_ID}:${GIT_TOKEN}@$github.com/bigpicture-interactive/lvup-fe
 RUN git checkout $FEATURE_BRANCH
 # sb init으로 나오는 커맨드를 그대로 사용
