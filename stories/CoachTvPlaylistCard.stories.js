@@ -1,7 +1,7 @@
 import CoachTvPlaylistCard from "@/views/components/coaching/CoachTvPlaylistCard.vue";
 
 export default {
-    title: "CoachTv/CoachTvPlaylistCard",
+    title: "coaching/CoachTv/CoachTvPlaylistCard",
     component: CoachTvPlaylistCard,
 };
 

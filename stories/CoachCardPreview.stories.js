@@ -1,7 +1,7 @@
 import CoachCardPreview from "@/views/components/coaching/CoachCardPreview.vue";
 
 export default {
-  title: "ranking/CoachCardPreview",
+  title: "coaching/ranking/CoachCardPreview",
   component: CoachCardPreview,
 };
 
