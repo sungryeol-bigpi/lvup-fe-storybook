@@ -3,3 +3,7 @@ export const setViewport = (viewport = "desktopLarge") => ({
     defaultViewport: viewport,
   },
 });
+
+export const setBackgroundColor = (backgroundColor = "coach-grey") => ({
+  backgrounds: { default: backgroundColor },
+});
