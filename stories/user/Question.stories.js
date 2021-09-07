@@ -25,7 +25,35 @@ CaseA.args = {
       createdDatetime: new Date('2021-03-05').getTime(),
       title: '테스트 질문입니다',
       categories: [
-        {type: 'LOL_LANE', text: '미드', value: 'MID'}
+        {groupName: 'LOL_LANE', text: '미드', value: 'MID'}
+      ]
+    }
+  }
+}
+
+export const CaseB = Template.bind({})
+
+CaseB.args = {
+  value: {
+    question: {
+      createdDatetime: new Date('2021-03-05').getTime(),
+      title: '테스트 질문입니다',
+      categories: [
+        {groupName: 'LOL_CHAMPION', text: '가렌', value: 'Garen', imageUrl: 'temp/5eba6d1b590b7924fcf0130e_1590745626994_1590745627508.jpg'}
+      ]
+    }
+  }
+}
+
+export const LongTitle = Template.bind({})
+
+LongTitle.args = {
+  value: {
+    question: {
+      createdDatetime: new Date('2021-03-05').getTime(),
+      title: '테스트 질문입니다. 어떻게 하면 하늘을 뚫고 날아가서 달에다 집을 짓고 가족과 함께 살 수 있을까요?',
+      categories: [
+        {groupName: 'LOL_LANE', text: '미드', value: 'MID'}
       ]
     }
   }
@@ -39,7 +67,7 @@ Mobile.args = {
       createdDatetime: new Date('2021-03-05').getTime(),
       title: '테스트 질문입니다',
       categories: [
-        {type: 'LOL_LANE', text: '미드', value: 'MID'}
+        {groupName: 'LOL_LANE', text: '미드', value: 'MID'}
       ]
     }
   }
@@ -56,7 +84,7 @@ TabletPortrait.args = {
       createdDatetime: new Date('2021-03-05').getTime(),
       title: '테스트 질문입니다',
       categories: [
-        {type: 'LOL_LANE', text: '미드', value: 'MID'}
+        {groupName: 'LOL_LANE', text: '미드', value: 'MID'}
       ]
     }
   }
