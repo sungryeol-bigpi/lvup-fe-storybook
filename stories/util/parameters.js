@@ -3,3 +3,8 @@ export const setViewport = (viewport = "desktopLarge") => ({
     defaultViewport: viewport,
   },
 });
+
+// 스토리북 기본 패딩 제거
+export const setFullscreen = {
+  layout: "fullscreen",
+};
