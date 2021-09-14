@@ -108,6 +108,7 @@ export const decorators = [
       const i18nData = { lang: "ko", country: "kr" };
       return i18nData[key] || "";
     };
+    Vue.prototype.$fromNow = value => `$fromNow(${value})`
     Vue.directive("clickOutside", clickOutside);
     const store = createStore();
     Vue.use(scrollAgency, { store });
