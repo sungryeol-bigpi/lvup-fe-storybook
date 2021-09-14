@@ -43,14 +43,15 @@ const viewports = {
   desktopSmall: {
     name: "desktop(s) SCREEN_DS",
     styles: {
-      width: "1920px",
-      height: "1080px",
+      width: "1260px",
+      height: `${1260*.56}px`,
     },
   },
   desktopMedium: {
     name: "desktop(m) SCREEN_DM",
     styles: {
       width: "1420px",
+      height: `${1420*.56}px`
     },
   },
   desktopLarge: {
@@ -107,6 +108,7 @@ export const decorators = [
       const i18nData = { lang: "ko", country: "kr" };
       return i18nData[key] || "";
     };
+    Vue.prototype.$fromNow = value => `$fromNow(${value})`
     Vue.directive("clickOutside", clickOutside);
     const store = createStore();
     Vue.use(scrollAgency, { store });
