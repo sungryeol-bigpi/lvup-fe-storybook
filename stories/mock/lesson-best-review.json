@@ -1,0 +1,120 @@
+{
+  "lesson": {
+    "lessonId": "602e21e971a00c5bc86f525c",
+    "name": "리플레이 코칭",
+    "description": [
+      {
+        "thumbnailUrl": "dev/images/lesson/1614753792356.png",
+        "description": "피드백 받을 게임의 리플레이를 준비해 주세요.",
+        "shortDescription": "피드백 받을 게임의 리플레이를 준비해 주세요."
+      },
+      {
+        "thumbnailUrl": "dev/images/lesson/1614753792629.png",
+        "description": "코치님이 해당 리플레이를 분석합니다.",
+        "shortDescription": "코치님이 해당 리플레이를 분석합니다."
+      },
+      {
+        "thumbnailUrl": "dev/images/lesson/1614753792918.png",
+        "description": "분석 내용을 바탕으로 개선 사항을 코칭합니다.",
+        "shortDescription": "분석 내용을 바탕으로 개선 사항을 코칭합니다."
+      }
+    ],
+    "duration": {
+      "unit": "HOURS",
+      "value": 1
+    },
+    "thumbnail": "images/lesson/img_lecture_replay.png"
+  },
+  "bestReviews": [
+    {
+      "lessonReviewId": "6059d98b9b037f0001dc1e9d",
+      "lessonProductOrderId": "6059d8729b037f0001dc1e97",
+      "lessonId": "602e21e971a00c5bc86f525c",
+      "coachId": "5de8a6998057024270ccd1e1",
+      "user": {
+        "userId": "5db2c465cfc74a983c8ae9df",
+        "uid": "LV_boi6e95j0i",
+        "nickname": "test5_user",
+        "email": "test5_user@test.test",
+        "profileImage": "dev/images/user/5db2c465cfc74a983c8ae9df_1614924765970_1614924766452.jpeg",
+        "backgroundImageUrl": null,
+        "isEmailVerified": true,
+        "emailVerifiedDatetime": 1574215189727,
+        "selfVerifiedDatetime": null,
+        "point": 400,
+        "recordsCount": 5,
+        "prizesCount": 6,
+        "tournamentsCount": 17,
+        "statsUpdateDatetime": 1578421804082,
+        "state": "NORMAL",
+        "isNormal": true,
+        "isTermsAgree": true,
+        "joinedDatetime": 1543245074991,
+        "mustRetryVerification": false
+      },
+      "description": "강사님이 너무 친절해요! 코칭받고 다이아까지 올라왔습니다 강사님이 너무 친절해요! 코칭받고 다이아까지 올라왔습니다 강사님이 너무 친절해요! 코칭받고 다이아까지 올라왔습니다 강사님이 너무 친절해요! 코칭받고 다이아까지 올라왔습니다 강사님이 너무 친절해요! 코칭받고 다이아까지 올라왔습니다 강사님이 너무 친절해요! 코칭받고 다이아까지 올라왔습니다",
+      "rating": 5,
+      "writeDateTime": 1616501131282
+    },
+    {
+      "lessonReviewId": "6059f5bc3a73900001bd2347",
+      "lessonProductOrderId": "6059e17aada53a00011eb52c",
+      "lessonId": "602e21e971a00c5bc86f525c",
+      "coachId": "5de8a6998057024270ccd1e1",
+      "user": {
+        "userId": "5db2c465cfc74a983c8ae9df",
+        "uid": "LV_boi6e95j0i",
+        "nickname": "test5_user",
+        "email": "test5_user@test.test",
+        "profileImage": "dev/images/user/5db2c465cfc74a983c8ae9df_1614924765970_1614924766452.jpeg",
+        "backgroundImageUrl": null,
+        "isEmailVerified": true,
+        "emailVerifiedDatetime": 1574215189727,
+        "selfVerifiedDatetime": null,
+        "point": 400,
+        "recordsCount": 5,
+        "prizesCount": 6,
+        "tournamentsCount": 17,
+        "statsUpdateDatetime": 1578421804082,
+        "state": "NORMAL",
+        "isNormal": true,
+        "isTermsAgree": true,
+        "joinedDatetime": 1543245074991,
+        "mustRetryVerification": false
+      },
+      "description": "강의 너무 좋습니다 강의 너무 좋습니다 강의 너무 좋습니다 강의 너무 좋습니다 강의 너무 좋습니다 강의 너무 좋습니다 강의 너무 좋습니다 강의 너무 좋습니다 강의 너무 좋습니다 강의 너무 좋습니다 강의 너무 좋습니다 강의 너무 좋습니다 강의 너무 좋습니다 ",
+      "rating": 5,
+      "writeDateTime": 1616508348628
+    },
+    {
+      "lessonReviewId": "605b4215614a6300018ddc3e",
+      "lessonProductOrderId": "605b2e5b86024800012b0b7d",
+      "lessonId": "602e21e971a00c5bc86f525c",
+      "coachId": "5de8a6998057024270ccd1e1",
+      "user": {
+        "userId": "5db2c465cfc74a983c8ae9df",
+        "uid": "LV_boi6e95j0i",
+        "nickname": "test5_user",
+        "email": "test5_user@test.test",
+        "profileImage": "dev/images/user/5db2c465cfc74a983c8ae9df_1614924765970_1614924766452.jpeg",
+        "backgroundImageUrl": null,
+        "isEmailVerified": true,
+        "emailVerifiedDatetime": 1574215189727,
+        "selfVerifiedDatetime": null,
+        "point": 400,
+        "recordsCount": 5,
+        "prizesCount": 6,
+        "tournamentsCount": 17,
+        "statsUpdateDatetime": 1578421804082,
+        "state": "NORMAL",
+        "isNormal": true,
+        "isTermsAgree": true,
+        "joinedDatetime": 1543245074991,
+        "mustRetryVerification": false
+      },
+      "description": "아주 만족스러운 수업이었습니다.",
+      "rating": 5,
+      "writeDateTime": 1616593429482
+    }
+  ]
+}
