@@ -1,0 +1,146 @@
+{
+  "question": {
+    "boardWriteId": "6062d7dc978ab00001fb6b23",
+    "title": "오른",
+    "content": "오른을 하는 오린이는 올인을 많이 당하나요?",
+    "imageUrls": [],
+    "user": {
+      "userId": "5db2c468cfc74a983c8aeb81",
+      "uid": "LV_2mx5dijiwv",
+      "nickname": "test27_user",
+      "email": "test27_user@test.test",
+      "profileImage": "",
+      "backgroundImageUrl": null,
+      "isEmailVerified": true,
+      "emailVerifiedDatetime": 1574215195515,
+      "selfVerifiedDatetime": null,
+      "point": 0,
+      "recordsCount": 1,
+      "prizesCount": 1,
+      "tournamentsCount": 2,
+      "statsUpdateDatetime": 1574215195515,
+      "state": "NORMAL",
+      "isNormal": true,
+      "isTermsAgree": true,
+      "joinedDatetime": 1543245074991,
+      "mustRetryVerification": false
+    },
+    "rank": {
+      "code": "SILVER_I",
+      "logoUrl": "prod/images/thirdparty/riot/lol/Emblem_Silver.png"
+    },
+    "usePrivateName": false,
+    "hasMyAnswer": false,
+    "hasScraped": true,
+    "categories": [
+      {
+        "groupName": "LOL_LANE",
+        "value": "TOP",
+        "text": "상관 없음",
+        "seq": 0
+      },
+      {
+        "groupName": "LOL_CHAMPION",
+        "value": "Ornn",
+        "text": "오른",
+        "seq": 0
+      }
+    ],
+    "createdDatetime": 1617090524829
+  },
+  "previewAnswer": {
+    "representativeAnswer": {
+      "coach": {
+        "coachId": "5de8a6998057024270ccd1e3",
+        "user": {
+          "userId": "5db2c468cfc74a983c8aeb0f",
+          "uid": "LV_9pewtbotem",
+          "nickname": "test21_user",
+          "email": "test21_user@test.test",
+          "profileImage": "dev/images/user/5db2c469cfc74a983c8aebba_1616569950138_1616569950593.jpg",
+          "backgroundImageUrl": null,
+          "isEmailVerified": true,
+          "emailVerifiedDatetime": 1617011045358,
+          "selfVerifiedDatetime": null,
+          "point": 0,
+          "recordsCount": 1,
+          "prizesCount": 1,
+          "tournamentsCount": 2,
+          "statsUpdateDatetime": 1574215193998,
+          "state": "NORMAL",
+          "isNormal": true,
+          "isTermsAgree": true,
+          "joinedDatetime": 1543245074991,
+          "mustRetryVerification": false
+        },
+        "tags": [
+          "PARTNER"
+        ],
+        "gameId": "5e1d9c64f711ba829bcc4c8c",
+        "rank": {
+          "code": "MASTER",
+          "logoUrl": "prod/images/thirdparty/riot/lol/Emblem_Master.png"
+        },
+        "reviewRating": 4.5,
+        "reviewCount": 4,
+        "isAdvertising": true,
+        "isLiked": false,
+        "mainHistory": [
+          "LOL을 잘하고 싶은 롤 초보, 저티어 분들을 위한 코치",
+          "게임의 기초,기본기를 갖추기 좋은 맞춤형 강의"
+        ],
+        "status": "OFFLINE",
+        "recommendLessonPrice": 100
+      },
+      "answer": {
+        "boardCommentId": "611e545c438d5f00018e8178",
+        "boardWriteId": "6062d7dc978ab00001fb6b23",
+        "commenter": {
+          "userId": "5db2c468cfc74a983c8aeb0f",
+          "uid": "LV_9pewtbotem",
+          "nickname": "test21_user",
+          "email": "test21_user@test.test",
+          "profileImage": "dev/images/user/5db2c469cfc74a983c8aebba_1616569950138_1616569950593.jpg",
+          "backgroundImageUrl": null,
+          "isEmailVerified": true,
+          "emailVerifiedDatetime": 1617011045358,
+          "selfVerifiedDatetime": null,
+          "point": 0,
+          "recordsCount": 1,
+          "prizesCount": 1,
+          "tournamentsCount": 2,
+          "statsUpdateDatetime": 1574215193998,
+          "state": "NORMAL",
+          "isNormal": true,
+          "isTermsAgree": true,
+          "joinedDatetime": 1543245074991,
+          "mustRetryVerification": false
+        },
+        "content": "안녕하세요안녕하세요안녕하세요안녕하세요wfqwdqw ",
+        "like": 0,
+        "dislike": 0,
+        "createdDatetime": 1629377628319
+      }
+    },
+    "thumbnailCoaches": [
+      {
+        "userId": "5db2c465cfc74a983c8ae9a6",
+        "coachId": "5de8a6998057024270ccd1e2",
+        "nickname": "test2_Coach_Chorong",
+        "profileImage": "dev/images/user/5db2c465cfc74a983c8ae9a6_1629351300109_1629351300827.jpg"
+      },
+      {
+        "userId": "5db2c464cfc74a983c8ae993",
+        "coachId": "5de8a6998057024270ccd1e1",
+        "nickname": "test1_user",
+        "profileImage": "dev/images/user/5db2c469cfc74a983c8aebba_1616569950138_1616569950593.jpg"
+      },
+      {
+        "userId": "5bfb8e82af69250f6d258157",
+        "coachId": "5de8a6998057024270ccd1e0",
+        "nickname": "LVUP_help12",
+        "profileImage": "dev/images/user/5bfb8e82af69250f6d258157_1624975419859_1624975420378.png"
+      }
+    ]
+  }
+}
