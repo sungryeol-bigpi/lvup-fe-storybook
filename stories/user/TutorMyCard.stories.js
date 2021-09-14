@@ -1,4 +1,5 @@
 import TutorMyCard from "@/views/components/coaching/user/TutorMyCard.vue";
+import { setViewport } from "../util/parameters";
 
 export default {
   title: "coaching/user/TutorMyCard",
@@ -158,7 +159,14 @@ const sampleUser = {
 export const Empty = Template.bind({});
 Empty.args = {};
 
-export const CaseA = Template.bind({});
-CaseA.args = {
-	userInfo: sampleUser
-};
+export const CaseADesktop = Template.bind({});
+CaseADesktop.args = {userInfo: sampleUser};
+CaseADesktop.parameters = { ...setViewport('desktopLarge')};
+
+export const CaseATabletPortrait = Template.bind({});
+CaseATabletPortrait.args = { userInfo: sampleUser};
+CaseATabletPortrait.parameters = {...setViewport('tabletPortrait')};
+
+export const CaseAMobileMedium = Template.bind({});
+CaseAMobileMedium.args = { userInfo: sampleUser};
+CaseAMobileMedium.parameters = {...setViewport('mobileMedium')};
