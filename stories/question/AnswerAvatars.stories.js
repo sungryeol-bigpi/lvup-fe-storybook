@@ -10,8 +10,8 @@ export default {
 
 const Template = (args, { argTypes }) => ({
   components: { AnswerAvatars },
-  props: Object.keys(argTypes).filter(k => k !== 'content'),
-  template: `<AnswerAvatars v-bind="$props">${args.content || ''}</Tag>`,
+  props: Object.keys(argTypes),
+  template: `<AnswerAvatars v-bind="$props">`,
 });
 
 export const CaseA = Template.bind({});
