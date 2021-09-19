@@ -8,6 +8,8 @@ import browser from "@/modules/Browser";
 // import store from './vuexStore'
 import "swiper/swiper-bundle.css";
 import "@/less/common.less";
+import mocki18n from "./plugins/mocki18n";
+import mockService from "./plugins/mockService";
 // import i18n from "@/plugins/i18n";
 
 // https://gs.statcounter.com/screen-resolution-stats/
@@ -100,15 +102,9 @@ export const parameters = {
 export const decorators = [
   (story) => {
     // Vue.use(i18n);
+    Vue.use(mocki18n);
+    Vue.use(mockService);
 
-    Vue.prototype.$t = (...args) => `$t-${args.join(",")}`;
-    Vue.prototype.$date = Vue.prototype.$t
-    Vue.prototype.$te = () => true;
-    Vue.prototype.$i18n = (key) => {
-      const i18nData = { lang: "ko", country: "kr" };
-      return i18nData[key] || "";
-    };
-    Vue.prototype.$fromNow = value => `$fromNow(${value})`
     Vue.directive("clickOutside", clickOutside);
     const store = createStore();
     Vue.use(scrollAgency, { store });
