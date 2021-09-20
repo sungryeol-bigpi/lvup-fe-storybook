@@ -11,7 +11,7 @@ export default {
 const Template = (args, { argTypes }) => ({
   components: { AnswerAvatars },
   props: Object.keys(argTypes),
-  template: `<AnswerAvatars v-bind="$props">`,
+  template: `<AnswerAvatars v-bind="$props" />`,
 });
 
 export const CaseA = Template.bind({});
