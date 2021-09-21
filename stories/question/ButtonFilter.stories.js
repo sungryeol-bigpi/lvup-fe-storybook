@@ -1,10 +1,12 @@
 import ButtonFilter from "@/views/components/coaching/question/ButtonFilter.vue";
+import { setViewport } from "../util/parameters";
 
 export default {
   title: "coaching/question/ButtonFilter",
   component: ButtonFilter,
   parameters: {
     backgrounds: { default: "coach-grey" },
+    ...setViewport('desktopLarge'),
   },
 };
 
@@ -30,4 +32,14 @@ export const WithExtraActive = Template.bind({})
 WithExtraActive.args = {
   content: `<span>포지션 : </span><em>탑</em>`,
   active: true,
+}
+
+export const Mobile = Template.bind({})
+Mobile.args = {
+  content: `전체`,
+  active: false,
+}
+
+Mobile.parameters = {
+  ...setViewport('mobileMedium')
 }
