@@ -3,6 +3,7 @@ export default (Vue, options) => {
   Vue.prototype.$t = (...args) => `$t-${args.join(",")}`;
   Vue.prototype.$date = Vue.prototype.$t;
   Vue.prototype.$te = () => true;
+  Vue.prototype.$tc = (...args) => `$tc(${args.join(',')})`
   Vue.prototype.$i18n = (key) => {
     const i18nData = { lang: "ko", country: "kr" };
     return i18nData[key] || "";
