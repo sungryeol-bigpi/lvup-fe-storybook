@@ -1,0 +1,137 @@
+[
+  {
+    "champion": {
+      "championId": "61398cb491b767000995e89c",
+      "koName": "나미",
+      "enName": "Nami",
+      "code": "Nami",
+      "key": 267,
+      "imageUrl": "dev/images/thirdparty/riot/lol/11.18.1/champion/Nami.png",
+      "lane": [
+        "MID",
+        "SUPPORT"
+      ]
+    },
+    "lanes": [
+      "SUPPORT",
+      "MID"
+    ]
+  },
+  {
+    "champion": {
+      "championId": "61398cb491b767000995e80a",
+      "koName": "나르",
+      "enName": "Gnar",
+      "code": "Gnar",
+      "key": 150,
+      "imageUrl": "dev/images/thirdparty/riot/lol/11.18.1/champion/Gnar.png",
+      "lane": [
+        "TOP",
+        "TOP"
+      ]
+    },
+    "lanes": [
+      "TOP"
+    ]
+  },
+  {
+    "champion": {
+      "championId": "61398cb491b767000995e8c0",
+      "koName": "그웬",
+      "enName": "Gwen",
+      "code": "Gwen",
+      "key": 887,
+      "imageUrl": "dev/images/thirdparty/riot/lol/11.18.1/champion/Gwen.png",
+      "lane": [
+        "TOP",
+        "JUNGLE"
+      ]
+    },
+    "lanes": [
+      "JUNGLE",
+      "TOP"
+    ]
+  },
+  {
+    "champion": {
+      "championId": "61398cb491b767000995e7af",
+      "koName": "드레이븐",
+      "enName": "Draven",
+      "code": "Draven",
+      "key": 119,
+      "imageUrl": "dev/images/thirdparty/riot/lol/11.18.1/champion/Draven.png",
+      "lane": [
+        "AD_CARRY"
+      ]
+    },
+    "lanes": [
+      "AD_CARRY"
+    ]
+  },
+  {
+    "champion": {
+      "championId": "61398cb591b767000995e903",
+      "koName": "그레이브즈",
+      "enName": "Graves",
+      "code": "Graves",
+      "key": 104,
+      "imageUrl": "dev/images/thirdparty/riot/lol/11.18.1/champion/Graves.png",
+      "lane": [
+        "AD_CARRY"
+      ]
+    },
+    "lanes": [
+      "AD_CARRY"
+    ]
+  },
+  {
+    "champion": {
+      "championId": "61398cb491b767000995e7e0",
+      "koName": "리산드라",
+      "enName": "Lissandra",
+      "code": "Lissandra",
+      "key": 127,
+      "imageUrl": "dev/images/thirdparty/riot/lol/11.18.1/champion/Lissandra.png",
+      "lane": [
+        "MID"
+      ]
+    },
+    "lanes": [
+      "MID"
+    ]
+  },
+  {
+    "champion": {
+      "championId": "61398cb491b767000995e763",
+      "koName": "르블랑",
+      "enName": "LeBlanc",
+      "code": "Leblanc",
+      "key": 7,
+      "imageUrl": "dev/images/thirdparty/riot/lol/11.18.1/champion/Leblanc.png",
+      "lane": [
+        "JUNGLE",
+        "MID"
+      ]
+    },
+    "lanes": [
+      "JUNGLE",
+      "MID"
+    ]
+  },
+  {
+    "champion": {
+      "championId": "61398cb491b767000995e7bc",
+      "koName": "렐",
+      "enName": "Rell",
+      "code": "Rell",
+      "key": 526,
+      "imageUrl": "dev/images/thirdparty/riot/lol/11.18.1/champion/Rell.png",
+      "lane": [
+        "TOP"
+      ]
+    },
+    "lanes": [
+      "TOP"
+    ]
+  }
+]
