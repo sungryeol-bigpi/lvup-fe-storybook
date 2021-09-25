@@ -1,0 +1,12 @@
+{
+  "championId": "61398cb491b767000995e868",
+  "koName": "가렌",
+  "enName": "Garen",
+  "code": "Garen",
+  "key": 86,
+  "imageUrl": "dev/images/thirdparty/riot/lol/11.18.1/champion/Garen.png",
+  "lane": [
+    "TOP",
+    "TOP"
+  ]
+}
