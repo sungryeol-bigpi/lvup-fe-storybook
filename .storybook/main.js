@@ -43,6 +43,7 @@ module.exports = {
       ],
       include: pathRoot,
     });
+    config.resolve.alias['@graphics'] = path.join(pathRoot, 'views', 'graphics');
     config.resolve.alias["~@"] = pathRoot;
     config.resolve.alias["@"] = pathRoot;
     return config;

@@ -10,6 +10,7 @@ import "swiper/swiper-bundle.css";
 import "@/less/common.less";
 import mocki18n from "./plugins/mocki18n";
 import mockService from "./plugins/mockService";
+import modal from '@/plugins/modal';
 // import i18n from "@/plugins/i18n";
 
 // https://gs.statcounter.com/screen-resolution-stats/
@@ -104,6 +105,7 @@ export const decorators = [
     // Vue.use(i18n);
     Vue.use(mocki18n);
     Vue.use(mockService);
+    Vue.use(modal);
 
     Vue.directive("clickOutside", clickOutside);
     const store = createStore();
