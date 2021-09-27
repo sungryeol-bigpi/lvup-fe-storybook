@@ -1,5 +1,6 @@
 const path = require("path");
 const pathRoot = path.resolve(__dirname, "../src");
+const pathStorybook = path.resolve(__dirname, '../stories');
 require("dotenv").config();
 
 // vue.config.js에서 설정 복사해옴
@@ -43,6 +44,10 @@ module.exports = {
       ],
       include: pathRoot,
     });
+    config.resolve.alias['@graphics'] = path.join(pathRoot, 'views', 'graphics');
+    config.resolve.alias['@mocks'] = path.join(pathStorybook, 'mock');
+    config.resolve.alias['@samples'] = path.join(pathStorybook, 'sample');
+    config.resolve.alias['@utils'] = path.join(pathStorybook, 'util');
     config.resolve.alias["~@"] = pathRoot;
     config.resolve.alias["@"] = pathRoot;
     return config;

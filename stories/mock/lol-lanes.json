@@ -1,0 +1,32 @@
+[
+  {
+    "groupName": "LOL_LANE",
+    "value": "TOP",
+    "text": "탑"
+  },
+  {
+    "groupName": "LOL_LANE",
+    "value": "JUNGLE",
+    "text": "정글"
+  },
+  {
+    "groupName": "LOL_LANE",
+    "value": "MID",
+    "text": "미드"
+  },
+  {
+    "groupName": "LOL_LANE",
+    "value": "AD_CARRY",
+    "text": "바텀"
+  },
+  {
+    "groupName": "LOL_LANE",
+    "value": "SUPPORT",
+    "text": "서포터"
+  },
+  {
+    "groupName": "LOL_LANE",
+    "value": "ALL",
+    "text": "상관 없음"
+  }
+]

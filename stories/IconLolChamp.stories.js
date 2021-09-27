@@ -1,5 +1,5 @@
 import IconLolChamp from '@/views/components/coaching/IconLolChamp.vue'
-import champ from './mock/LolChamp.json';
+import champ from '@mocks/lol-champ.json';
 
 
 export default {

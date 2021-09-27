@@ -2,7 +2,7 @@ import TutorDashboardItem from "@/views/components/coaching/user/TutorDashboardI
 import ColorButton from '@/views/components/common/ColorButton.vue';
 import { SvgTutorDashboardCoach, SvgTutorDashboardMonitor } from '@/views/graphics/tutor-dashboard/LazyLoadings';
 import RatingStar from '@/views/components/manage/RatingStar.vue'
-import { setViewport } from "../util/parameters";
+import { setViewport } from "@utils/parameters";
 
 export default {
   title: "coaching/user/TutorDashboardItem",

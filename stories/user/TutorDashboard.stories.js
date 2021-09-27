@@ -1,5 +1,5 @@
 import TutorDashboard from "@/views/components/coaching/user/TutorDashboard.vue";
-import { setViewport } from "../util/parameters";
+import { setViewport } from "@utils/parameters";
 
 export default {
   title: "coaching/user/TutorDashboard",
