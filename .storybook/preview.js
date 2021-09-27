@@ -10,7 +10,7 @@ import "swiper/swiper-bundle.css";
 import "@/less/common.less";
 import mocki18n from "./plugins/mocki18n";
 import mockService from "./plugins/mockService";
-import modal from '@/plugins/modal';
+import modal from "@/plugins/modal";
 // import i18n from "@/plugins/i18n";
 
 // https://gs.statcounter.com/screen-resolution-stats/
@@ -47,14 +47,14 @@ const viewports = {
     name: "desktop(s) SCREEN_DS",
     styles: {
       width: "1260px",
-      height: `${1260*.56}px`,
+      height: `${1260 * 0.56}px`,
     },
   },
   desktopMedium: {
     name: "desktop(m) SCREEN_DM",
     styles: {
       width: "1420px",
-      height: `${1420*.56}px`
+      height: `${1420 * 0.56}px`,
     },
   },
   desktopLarge: {
@@ -97,6 +97,14 @@ export const parameters = {
   },
   viewport: {
     viewports,
+  },
+  options: {
+    storySort: {
+      order: [
+        "coaching",
+        ["CoachTv", "ranking", "user", "lesson", "question", "filter"],
+      ],
+    },
   },
 };
 

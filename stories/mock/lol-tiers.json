@@ -1,0 +1,172 @@
+[
+  {
+    "groupName": "LOL_TIER",
+    "value": "CHALLENGER_I",
+    "text": "Challenger"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "GRANDMASTER_I",
+    "text": "Grandmaster"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "MASTER_I",
+    "text": "Master"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "DIAMOND_I",
+    "text": "Diamond I"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "DIAMOND_II",
+    "text": "Diamond II"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "DIAMOND_III",
+    "text": "Diamond III"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "DIAMOND_IV",
+    "text": "Diamond IV"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "DIAMOND_V",
+    "text": "Diamond V"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "PLATINUM_I",
+    "text": "Platinum I"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "PLATINUM_II",
+    "text": "Platinum II"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "PLATINUM_III",
+    "text": "Platinum III"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "PLATINUM_IV",
+    "text": "Platinum IV"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "PLATINUM_V",
+    "text": "Platinum V"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "GOLD_I",
+    "text": "Gold I"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "GOLD_II",
+    "text": "Gold II"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "GOLD_III",
+    "text": "Gold III"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "GOLD_IV",
+    "text": "Gold IV"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "GOLD_V",
+    "text": "Gold V"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "SILVER_I",
+    "text": "Silver I"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "SILVER_II",
+    "text": "Silver II"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "SILVER_III",
+    "text": "Silver III"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "SILVER_IV",
+    "text": "Silver IV"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "SILVER_V",
+    "text": "Silver V"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "BRONZE_I",
+    "text": "Bronze I"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "BRONZE_II",
+    "text": "Bronze II"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "BRONZE_III",
+    "text": "Bronze III"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "BRONZE_IV",
+    "text": "Bronze IV"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "BRONZE_V",
+    "text": "Bronze V"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "IRON_I",
+    "text": "Iron I"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "IRON_II",
+    "text": "Iron II"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "IRON_III",
+    "text": "Iron III"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "IRON_IV",
+    "text": "Iron IV"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "IRON_V",
+    "text": "Iron V"
+  },
+  {
+    "groupName": "LOL_TIER",
+    "value": "UNRANKED",
+    "text": "Unranked"
+  }
+]

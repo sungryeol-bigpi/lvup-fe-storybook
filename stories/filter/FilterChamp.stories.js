@@ -1,8 +1,8 @@
 import FilterChamp from "@/views/components/coaching/filter/FilterChamp.vue";
-import lolChamps from '../mock/lol-champs'
+import lolChamps from '@mocks/lol-champs.json'
 
 export default {
-  title: "coaching/FilterChamp",
+  title: "coaching/filter/FilterChamp",
   component: FilterChamp,
 };
 

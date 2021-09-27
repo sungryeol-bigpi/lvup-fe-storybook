@@ -1,7 +1,8 @@
 import FilterLane from "@/views/components/coaching/filter/FilterLane.vue";
+import lolLane from '@mocks/lol-lanes.json';
 
 export default {
-  title: "coaching/FilterLane",
+  title: "coaching/filter/FilterLane",
   component: FilterLane,
 };
 
@@ -13,10 +14,4 @@ const Template = (args) => ({
 });
 
 export const CaseA = Template.bind({});
-CaseA.args = { positions: [
-	{ key: "ALL", label: "전체" },
-	{key: 'MID', label: '미드'},
-	{key: 'AD_CARRY', label: '바텀'},
-	{key: 'JUNGLE', label:'정글'},
-	{key: 'TOP', label:'탑'},
-] };
+CaseA.args = { lanes: lolLane };
