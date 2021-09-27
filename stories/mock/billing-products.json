@@ -1,0 +1,123 @@
+[
+  {
+    "cashProductId": "1e79b381c85211eb8a970a9f",
+    "price": 1000,
+    "resultPrice": 1000,
+    "name": "100UP 포인트",
+    "point": 1000,
+    "schedule": {
+      "salesStartDateTime": 946684800000,
+      "salesEndDateTime": 32535129600000
+    }
+  },
+  {
+    "cashProductId": "602e21e971a00c5bc86f5251",
+    "price": 5500,
+    "resultPrice": 5500,
+    "name": "500UP 포인트",
+    "point": 500,
+    "schedule": {
+      "salesStartDateTime": 946684800000,
+      "salesEndDateTime": 32535129600000
+    }
+  },
+  {
+    "cashProductId": "602e21e971a00c5bc86f5252",
+    "price": 11000,
+    "resultPrice": 11000,
+    "name": "1000UP 포인트",
+    "point": 1000,
+    "schedule": {
+      "salesStartDateTime": 946684800000,
+      "salesEndDateTime": 32535129600000
+    }
+  },
+  {
+    "cashProductId": "602e21e971a00c5bc86f5253",
+    "price": 33000,
+    "resultPrice": 33000,
+    "name": "3000UP 포인트",
+    "point": 3000,
+    "schedule": {
+      "salesStartDateTime": 946684800000,
+      "salesEndDateTime": 32535129600000
+    }
+  },
+  {
+    "cashProductId": "602e21e971a00c5bc86f5254",
+    "price": 55000,
+    "resultPrice": 55000,
+    "name": "5000UP 포인트",
+    "point": 5000,
+    "schedule": {
+      "salesStartDateTime": 946684800000,
+      "salesEndDateTime": 32535129600000
+    }
+  },
+  {
+    "cashProductId": "602e21e971a00c5bc86f5255",
+    "price": 110000,
+    "resultPrice": 110000,
+    "name": "10000UP 포인트",
+    "point": 10000,
+    "schedule": {
+      "salesStartDateTime": 946684800000,
+      "salesEndDateTime": 32535129600000
+    }
+  },
+  {
+    "cashProductId": "aac6722fc80911eb8a970a9f",
+    "price": 330000,
+    "resultPrice": 330000,
+    "name": "30000UP 포인트",
+    "point": 30000,
+    "schedule": {
+      "salesStartDateTime": 946684800000,
+      "salesEndDateTime": 32535129600000
+    }
+  },
+  {
+    "cashProductId": "aac6754dc80911eb8a970a9f",
+    "price": 550000,
+    "resultPrice": 550000,
+    "name": "50000UP 포인트",
+    "point": 50000,
+    "schedule": {
+      "salesStartDateTime": 946684800000,
+      "salesEndDateTime": 32535129600000
+    }
+  },
+  {
+    "cashProductId": "aac67669c80911eb8a970a9f",
+    "price": 1100000,
+    "resultPrice": 1100000,
+    "name": "100000UP 포인트",
+    "point": 100000,
+    "schedule": {
+      "salesStartDateTime": 946684800000,
+      "salesEndDateTime": 32535129600000
+    }
+  },
+  {
+    "cashProductId": "c376a6b81c2011ec80810a9f",
+    "price": 1,
+    "resultPrice": 1,
+    "name": "1UP 포인트",
+    "point": 1,
+    "schedule": {
+      "salesStartDateTime": 946684800000,
+      "salesEndDateTime": 32535129600000
+    }
+  },
+  {
+    "cashProductId": "c385710c1c2011ec80810a9f",
+    "price": 100,
+    "resultPrice": 100,
+    "name": "10UP 포인트",
+    "point": 10,
+    "schedule": {
+      "salesStartDateTime": 946684800000,
+      "salesEndDateTime": 32535129600000
+    }
+  }
+]
