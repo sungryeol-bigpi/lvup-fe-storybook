@@ -1,5 +1,5 @@
 import ButtonFilter from "@/views/components/coaching/question/ButtonFilter.vue";
-import { setViewport } from "../util/parameters";
+import { setViewport } from "@utils/parameters";
 
 export default {
   title: "coaching/question/ButtonFilter",

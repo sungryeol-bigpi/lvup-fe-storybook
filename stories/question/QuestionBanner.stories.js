@@ -1,5 +1,5 @@
 import QuestionBanner from "@/views/components/coaching/question/QuestionBanner.vue";
-import { setViewport } from "../util/parameters";
+import { setViewport } from "@utils/parameters";
 
 export default {
   title: "coaching/question/QuestionBanner",

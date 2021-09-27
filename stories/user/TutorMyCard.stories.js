@@ -1,6 +1,6 @@
 import TutorMyCard from "@/views/components/coaching/user/TutorMyCard.vue";
-import { setViewport } from "../util/parameters";
-import { coachInfo } from "../sample";
+import { setViewport } from "@utils/parameters";
+import { coachInfo } from "@samples";
 
 export default {
   title: "coaching/user/TutorMyCard",

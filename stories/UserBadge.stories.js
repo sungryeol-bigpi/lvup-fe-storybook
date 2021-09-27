@@ -1,6 +1,6 @@
 import UserBadge from "@/views/components/coaching/UserBadge.vue";
-import { setViewport } from "./util/parameters";
-import { users } from './sample'
+import { setViewport } from "@utils/parameters";
+import { users } from '@samples'
 const [sampleUser] = users;
 
 export default {

@@ -1,5 +1,5 @@
 import Mission from "@/views/components/coaching/user/Mission.vue";
-import { setBackgroundColor } from "../util/parameters";
+import { setBackgroundColor } from "@utils/parameters";
 
 export default {
   title: "coaching/user/Mission",

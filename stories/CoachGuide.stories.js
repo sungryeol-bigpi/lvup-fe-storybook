@@ -1,5 +1,5 @@
 import CoachGuide from "@/views/components/coaching/CoachGuide.vue";
-import { setFullscreen, setViewport } from "./util/parameters";
+import { setFullscreen, setViewport } from "@utils/parameters";
 
 export default {
   title: "coaching/user/CoachGuide",
