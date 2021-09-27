@@ -1,8 +1,9 @@
 import lolChamps from "./lolChamps.json";
 
 const coachingService = {
+  getLolChamps: async ({name = '', lane = ''}) => lolChamps.filter(c => c.koName.includes(name) || c.lane.includes(lane)),
   getLolChampsAll: async () => lolChamps,
-  getChampByCode: async (champCode) => lolChamps.find(c => c.code === champCode)
+  getChampByCode: async (champCode) => lolChamps.find(c => c.code === champCode),
 }
 
 export default (Vue, options) => {
