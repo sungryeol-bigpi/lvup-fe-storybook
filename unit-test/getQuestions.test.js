@@ -16,12 +16,12 @@ describe("CoachingService/getQuestions", () => {
     cs.getQuestions({
       cursor: 0,
       size: 5,
-      category: [{ groupName: "LOL_LANE", values: ["ALL"] }],
+      category: [{ groupName: "LOL_LANE", values: ["TOP"] }],
     });
     expect(API.get).toHaveBeenCalledWith("v1/qna/LOL/questions", {
       cursor: 0,
       size: 5,
-      q: 'category%20eq%20%5B%7B%22groupName%22%3A%22LOL_LANE%22%2C%22values%22%3A%5B%22ALL%22%5D%7D%5D',
+      q: 'category eq %5B%7B%22groupName%22:%22LOL_LANE%22,%22values%22:%5B%22TOP%22%5D%7D%5D',
     });
   });
   it("multiple category query should work properly", () => {
@@ -32,12 +32,12 @@ describe("CoachingService/getQuestions", () => {
     cs.getQuestions({
       cursor: 0,
       size: 5,
-      category: [{ groupName: "LOL_LANE", values: ["ALL"] }, { groupName: 'LOL_CHAMP', values: ['Garen']}],
+      category: [{ groupName: 'LOL_LANE', values: ['ALL'] }, { groupName: 'LOL_CHAMPION', values: ['Garen']}],
     });
     expect(API.get).toHaveBeenCalledWith("v1/qna/LOL/questions", {
       cursor: 0,
       size: 5,
-      q: 'category%20eq%20%5B%7B%22groupName%22%3A%22LOL_LANE%22%2C%22values%22%3A%5B%22ALL%22%5D%7D%2C%7B%22groupName%22%3A%22LOL_CHAMP%22%2C%22values%22%3A%5B%22Garen%22%5D%7D%5D',
+      q: 'category eq %5B%7B%22groupName%22:%22LOL_LANE%22,%22values%22:%5B%22ALL%22%5D%7D,%7B%22groupName%22:%22LOL_CHAMPION%22,%22values%22:%5B%22Garen%22%5D%7D%5D',
     });
   });
 });
