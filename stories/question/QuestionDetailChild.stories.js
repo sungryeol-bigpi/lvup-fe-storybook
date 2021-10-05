@@ -1,5 +1,6 @@
 import ButtonLesson from "@/views/components/coaching/question-detail/ButtonLesson";
 import ButtonIconGhost from "@/views/components/coaching/question-detail/ButtonIconGhost"
+import ButtonList from '@/views/components/coaching/question-detail/ButtonList'
 import { setViewport } from "@utils/parameters";
 
 export default {
@@ -11,7 +12,7 @@ export default {
 };
 
 const Template = (args, { argTypes }) => ({
-  components: { ButtonLesson, ButtonIconGhost },
+  components: { ButtonLesson, ButtonIconGhost, ButtonList },
   props: Object.keys(argTypes),
   template: `	
 <div>
@@ -25,6 +26,8 @@ const Template = (args, { argTypes }) => ({
 	<button-icon-ghost type="thumbsup" active/>
 	<button-icon-ghost type="share" active/>
 	<button-icon-ghost type="bookmark" active/>
+  <h1>ButtonList</h1>
+  <button-list />
 </div>
 	`,
 });
