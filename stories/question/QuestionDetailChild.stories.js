@@ -19,6 +19,7 @@ const Template = (args, { argTypes }) => ({
   <h1>ButtonLesson</h1>
 	<button-lesson />
 	<button-lesson disabled />
+  <hr />
 	<h1>ButtonIconGhost</h1>
 	<button-icon-ghost type="thumbsup" />
 	<button-icon-ghost type="share" />
@@ -26,6 +27,7 @@ const Template = (args, { argTypes }) => ({
 	<button-icon-ghost type="thumbsup" active/>
 	<button-icon-ghost type="share" active/>
 	<button-icon-ghost type="bookmark" active/>
+  <hr />
   <h1>ButtonList</h1>
   <button-list />
 </div>
