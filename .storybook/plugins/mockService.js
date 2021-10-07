@@ -8,7 +8,8 @@ const coachingService = {
   getChampByCode: async (champCode) => lolChamps.find(c => c.code === champCode),
   getCategories: async(groupName) => {
     return {LOL_LANE: lolLane, LOL_TIER: lolTier}[groupName]
-  }
+  },
+  getPreferChamp: async() => [],
 }
 
 export default (Vue, options) => {
