@@ -1,11 +1,11 @@
 import ButtonLesson from "@/views/components/coaching/question-detail/ButtonLesson";
 import ButtonIconGhost from "@/views/components/coaching/question-detail/ButtonIconGhost"
 import ButtonList from '@/views/components/coaching/question-detail/ButtonList'
+import NoContent from '@/views/components/coaching/question-detail/NoContent'
 import { setViewport } from "@utils/parameters";
 
 export default {
   title: "coaching/question-detail/QuestionDetailChild",
-  // component: QuestionDetail,
   parameters: {
     backgrounds: { default: "coach-grey" },
   },
@@ -39,3 +39,15 @@ DesktopLarge.parameters = { ...setViewport("desktopLarge") };
 
 export const MobileLarge = Template.bind({});
 MobileLarge.parameters = { ...setViewport("mobileLarge") };
+
+const NoContentTemplate = (arg, {argTypes}) => ({
+  props: Object.keys(argTypes),
+  components: {NoContent},
+  template: `<NoContent :src="src" :alt="alt">${arg.message}</NoContent>`
+})
+
+export const NoContentA = NoContentTemplate.bind({})
+NoContentA.args = {message: '코치님의 답변을 기다리고 있습니다.', alt: 'eyes', src: '/img/coaching/seeking-eyes.svg'}
+
+export const NoContentB = NoContentTemplate.bind({})
+NoContentB.args = {message: '아직 질문을 작성하지 않으신 것 같아요.<br />코치들에게 질문을 작성해보세요!', alt: 'memopad', src: '/img/coaching/memopad.svg' }
