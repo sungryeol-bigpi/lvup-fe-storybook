@@ -102,7 +102,7 @@ export const parameters = {
     storySort: {
       order: [
         "coaching",
-        ["CoachTv", "ranking", "user", "lesson", "question", "question-detail", "filter"],
+        ["CoachTv", "ranking", "user", "lesson", "question", "question-detail", "post-question", "filter"],
       ],
     },
   },

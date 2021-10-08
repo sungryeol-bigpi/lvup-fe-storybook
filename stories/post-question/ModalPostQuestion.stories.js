@@ -1,7 +1,7 @@
 import ModalPostQuestion from './ModalPostQuestionWrap.vue'
 
 export default {
-  title: "coaching/filter/ModalPostQuestion",
+  title: "coaching/post-question/ModalPostQuestion",
   component: ModalPostQuestion,
 };
 
