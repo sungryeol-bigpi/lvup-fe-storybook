@@ -1,42 +1,46 @@
 import InputSuggest from "@/views/components/coaching/InputSuggest.vue";
+import lolChamps from "@mocks/lol-champs.json";
+import ChampSelectItem from "@/views/components/coaching/post-question/ChampSelectItem.vue";
 
 export default {
   title: "coaching/InputSuggest",
   component: InputSuggest,
 };
 
-// const Template = (args, { argTypes }) => ({
-//   components: { InputSuggest },
-//   props: Object.keys(argTypes),
-//   data: () => ({ value: "" }),
-//   methods: {
-//     async suggest(keyword = "") {
-//       return ["sample1", "sample2", "sample3"].filter(keyword);
-//     },
-//   },
-//   template: `<InputSuggest v-bind="$props" :suggest="suggest" v-model="value" />`,
-// });
-
-export const TextOnly = (args, { argTypes }) => ({
+export const Champs = (args, { argTypes }) => ({
   components: { InputSuggest },
   props: Object.keys(argTypes),
-  data: () => ({ text: "" }),
+  data: () => ({ champCode: "", champText: "" }),
   methods: {
-    async suggest(keyword = "") {
-      return ["sample1", "sample2", "sample3"].filter(t => t.includes(keyword));
+    async onSuggest(keyword = "") {
+      const re = new RegExp(keyword, "i");
+      return lolChamps.filter((c) => re.test(c.code) || re.test(c.koName));
+    },
+    onSelectChamp({ value, setValue, setText }) {
+      console.log("onSelectChamp", value);
+      setValue(value?.code);
+      setText(value?.koName);
+    },
+    getChampItemProp(champ) {
+      return { ...champ, key: champ.code }
     },
   },
-  template: `<InputSuggest v-bind="$props" :suggest="suggest" v-model="text" />`,
+  computed: {
+    ChampSelectItem: () => ChampSelectItem,
+  },
+  template: `<InputSuggest v-bind="$props" :suggest="onSuggest" v-model="champCode" :item-tag="ChampSelectItem" :text.sync="champText" :on-select="onSelectChamp" :get-item-prop="getChampItemProp" />`,
 });
 
-export const TextOnlyKor = (args, { argTypes }) => ({
+export const RandomSample = (args, { argTypes }) => ({
   components: { InputSuggest },
   props: Object.keys(argTypes),
-  data: () => ({ text: "" }),
+  data: () => ({ key: "", display: "" }),
   methods: {
-    async suggest(keyword = "") {
-      return ["샘플1", "샘플2", "샘플3"].filter(t => t.includes(keyword));
+    async onSuggest(keyword = "") {
+      return ["sample1", "sample2", "sample3"].filter((k) =>
+        k.includes(keyword)
+      );
     },
   },
-  template: `<InputSuggest v-bind="$props" :suggest="suggest" v-model="text" />`,
+  template: `<InputSuggest v-bind="$props" :suggest="onSuggest" v-model="key" :text.sync="display" />`,
 });
