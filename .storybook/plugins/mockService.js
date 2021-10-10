@@ -12,10 +12,9 @@ const coachingService = {
   },
   getPreferChamp: async() => preferChampions,
 }
+export const services = { coaching:coachingService };
 
 export default (Vue, options) => {
   console.log('service mocked')
-  Vue.prototype.$services = {
-    coaching: coachingService
-  }
+  Vue.prototype.$services = services; 
 };

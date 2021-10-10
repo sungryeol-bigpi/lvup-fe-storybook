@@ -9,9 +9,11 @@ import browser from "@/modules/Browser";
 import "swiper/swiper-bundle.css";
 import "@/less/common.less";
 import mocki18n from "./plugins/mocki18n";
-import mockService from "./plugins/mockService";
+import mockService, {services} from "./plugins/mockService";
 import modal from "@/plugins/modal";
 // import i18n from "@/plugins/i18n";
+import validate from '@/plugins/validate';
+import toast from '@/plugins/toast';
 
 // https://gs.statcounter.com/screen-resolution-stats/
 const viewports = {
@@ -114,6 +116,8 @@ export const decorators = [
     Vue.use(mocki18n);
     Vue.use(mockService);
     Vue.use(modal);
+    Vue.use(validate, { services });
+    Vue.use(toast);
 
     Vue.directive("clickOutside", clickOutside);
     const store = createStore();
