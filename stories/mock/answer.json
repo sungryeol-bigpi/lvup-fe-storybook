@@ -1,0 +1,53 @@
+[
+  {
+    "boardCommentId": "611e4929438d5f00018e8175",
+    "boardWriteId": "610ce380ba448a00016e1fc1",
+    "content": "이것은 댃글 펼침입ㄴ디ㅏ.이것은 댃글 펼침입ㄴ디ㅏ.이것은 댃글 펼침입ㄴ디ㅏ.\n\n\n이것은 댃글 펼침입ㄴ디ㅏ.이것은 댃글 펼침입ㄴ디ㅏ.이것은 댃글 펼침입ㄴ디ㅏ.이것은 댃글 펼침입ㄴ디ㅏ.이것은 댃글 펼침입ㄴ디ㅏ.이것은 댃글 펼침입ㄴ디ㅏ.\n\n\n이것은 댃글 펼침입ㄴ디ㅏ.이것은 댃글 펼침입ㄴ디ㅏ.이것은 댃글 펼침입ㄴ디ㅏ.이것은 댃글 펼침입ㄴ디ㅏ.이것은 댃글 펼침입ㄴ디ㅏ.이것은 댃글 펼침입ㄴ디ㅏ.\n\n\n이것은 댃글 펼침입ㄴ디ㅏ.이것은 댃글 펼침입ㄴ디ㅏ.이것은 댃글 펼침입ㄴ디ㅏ.",
+    "coach": {
+      "coachId": "5de8a6998057024270ccd1e3",
+      "user": {
+        "userId": "5db2c468cfc74a983c8aeb0f",
+        "uid": "LV_9pewtbotem",
+        "nickname": "test21_user",
+        "email": "test21_user@test.test",
+        "profileImage": "dev/images/user/5db2c468cfc74a983c8aeb0f_1633355292702_1633355293044.jpg",
+        "backgroundImageUrl": null,
+        "isEmailVerified": true,
+        "emailVerifiedDatetime": 1617011045358,
+        "selfVerifiedDatetime": null,
+        "point": 0,
+        "recordsCount": 1,
+        "prizesCount": 1,
+        "tournamentsCount": 2,
+        "statsUpdateDatetime": 1574215193998,
+        "state": "NORMAL",
+        "isNormal": true,
+        "isTermsAgree": true,
+        "joinedDatetime": 1543245074991,
+        "mustRetryVerification": false
+      },
+      "tags": ["PARTNER"],
+      "gameId": "5e1d9c64f711ba829bcc4c8c",
+      "rank": {
+        "code": "MASTER",
+        "logoUrl": "prod/images/thirdparty/riot/lol/Emblem_Master.png"
+      },
+      "reviewRating": 4.5,
+      "reviewCount": 4,
+      "isAdvertising": true,
+      "isLiked": false,
+      "mainHistory": [
+        "LOL을 잘하고 싶은 롤 초보, 저티어 분들을 위한 코치",
+        "게임의 기초,기본기를 갖추기 좋은 맞춤형 강의"
+      ],
+      "status": "ONLINE",
+      "recommendLessonPrice": 100
+    },
+    "hasScraped": false,
+    "like": 0,
+    "dislike": 0,
+    "hasLiked": false,
+    "hasDisLiked": false,
+    "createdDatetime": 1629374761937
+  }
+]
