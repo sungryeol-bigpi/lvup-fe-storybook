@@ -23,6 +23,8 @@ export default (Vue, options) => {
 
   Vue.prototype.$te = $te;
   Vue.prototype.$tc = (key, opt) => i18n.translate(key, defaultLocale, true, true, opt);
+  const tv = (key, opt) => i18n.translate(key, defaultLocale, false, false, opt);
+  Vue.directive('tv', tv)
   Vue.prototype.$i18n = (key) => {
     const i18nData = { lang: "ko", country: "kr" };
     return i18nData[key] || "";
