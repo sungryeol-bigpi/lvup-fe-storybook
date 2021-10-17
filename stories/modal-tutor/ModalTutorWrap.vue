@@ -7,6 +7,7 @@
 <script>
 import ModalTutor from "@/views/components/coaching/modal-tutor/ModalTutor.vue"
 import ColorButton from '@/views/components/common/ColorButton.vue';
+import coaches from '@mocks/coaches'
 
 export default {
   components: { ModalTutor, ColorButton },
@@ -14,7 +15,7 @@ export default {
   methods: {
     async openModal() {
       try {
-        this.question = await this.$modal(ModalTutor, { coachId: 'aaa', userId: 'bbb'});
+        this.question = await this.$modal(ModalTutor, { coachInfo: coaches[0] });
       } catch (err) {
         console.error(err)
       }

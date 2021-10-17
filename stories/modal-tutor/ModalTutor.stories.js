@@ -1,3 +1,4 @@
+import { setViewport } from '../util/parameters';
 import ModalTutor from './ModalTutorWrap.vue'
 
 export default {
@@ -11,4 +12,7 @@ const Template = (args) => ({
   template: `<ModalTutor v-bind="$props" />`,
 });
 
-export const Normal = Template.bind({});
+export const DesktopLarge = Template.bind({});
+DesktopLarge.parameters = {...setViewport('desktopLarge')}
+export const MobileMedium = Template.bind({});
+MobileMedium.parameters = {...setViewport('mobileMedium')}
