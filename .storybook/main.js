@@ -1,6 +1,9 @@
 const path = require("path");
 const pathRoot = path.resolve(__dirname, "../src");
 const pathStorybook = path.resolve(__dirname, '../stories');
+const { DefinePlugin } = require('webpack')
+const TARGET_NODE = process.env.WEBPACK_TARGET === 'node';
+
 require("dotenv").config();
 
 // vue.config.js에서 설정 복사해옴
@@ -20,7 +23,7 @@ module.exports = {
     "../stories/**/*.stories.@(js|jsx|ts|tsx)",
   ],
   addons: ["@storybook/addon-links", "@storybook/addon-essentials"],
-  async webpackFinal(config) {
+  async webpackFinal(config, webpack) {
     // vue.config.js에서 설정 복사해옴
     config.module.rules.push({
       test: /\.less$/,
@@ -50,6 +53,7 @@ module.exports = {
     config.resolve.alias['@utils'] = path.join(pathStorybook, 'util');
     config.resolve.alias["~@"] = pathRoot;
     config.resolve.alias["@"] = pathRoot;
+    config.plugins.push(new DefinePlugin({ TARGET_NODE }))
     return config;
   },
 };
