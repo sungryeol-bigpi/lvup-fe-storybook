@@ -1,4 +1,4 @@
-import CoachTvPlaylistCard from "@/views/components/coaching/CoachTvPlaylistCard.vue";
+import CoachTvPlaylistCard from "@/views/components/coaching/coachTv/CoachTvPlaylistCard.vue";
 
 export default {
     title: "coaching/CoachTv/CoachTvPlaylistCard",
