@@ -104,7 +104,7 @@ export const parameters = {
     storySort: {
       order: [
         "coaching",
-        ["CoachTv", "ranking", "user", "lesson", "question", "question-detail", "post-question", "filter"],
+        ["CoachTv", "ranking", "user", "lesson", "question", "question-detail", "post-question", "filter", 'coachList', 'modal-tutor'],
       ],
     },
   },

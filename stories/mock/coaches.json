@@ -1,0 +1,148 @@
+[
+  {
+    "coachId": "5de8a6998057024270ccd1e3",
+    "user": {
+      "userId": "5db2c468cfc74a983c8aeb0f",
+      "uid": "LV_9pewtbotem",
+      "nickname": "test21_user",
+      "email": "test21_user@test.test",
+      "profileImage": "dev/images/user/5db2c468cfc74a983c8aeb0f_1633355292702_1633355293044.jpg",
+      "backgroundImageUrl": null,
+      "isEmailVerified": true,
+      "emailVerifiedDatetime": 1617011045358,
+      "selfVerifiedDatetime": null,
+      "point": 0,
+      "recordsCount": 1,
+      "prizesCount": 1,
+      "tournamentsCount": 2,
+      "statsUpdateDatetime": 1574215193998,
+      "state": "NORMAL",
+      "isNormal": true,
+      "isTermsAgree": true,
+      "joinedDatetime": 1543245074991,
+      "mustRetryVerification": false
+    },
+    "tags": ["PARTNER"],
+    "gameId": "5e1d9c64f711ba829bcc4c8c",
+    "reviewRating": 4.8,
+    "reviewCount": 16,
+    "isAdvertising": true,
+    "isLiked": false,
+    "rank": {
+      "code": "MASTER",
+      "logoUrl": "prod/images/thirdparty/riot/lol/Emblem_Master.png"
+    },
+    "status": "OFFLINE",
+    "mainHistory": [
+      "LOL을 잘하고 싶은 롤 초보, 저티어 분들을 위한 코치",
+      "게임의 기초,기본기를 갖추기 좋은 맞춤형 강의",
+      "브실골 탈출을 위한 직관적인 방법 / 방향 제시 ",
+      "現 게임코치아카데미 리그오브레전드 코치"
+    ],
+    "recommendLessonPrice": 100,
+    "enableDoubleBundleSale": true,
+    "enableTripleBundleSale": true,
+    "lessonProducts": [
+      {
+        "lessonProductId": "602e21e971a00c5bc86f528c",
+        "lesson": {
+          "lessonId": "602e21e971a00c5bc86f525c",
+          "name": "리플레이 코칭",
+          "description": [
+            {
+              "thumbnailUrl": "dev/images/lesson/1614753792356.png",
+              "description": "피드백 받을 게임의 리플레이를 준비해 주세요.",
+              "shortDescription": "피드백 받을 게임의 리플레이를 준비해 주세요."
+            },
+            {
+              "thumbnailUrl": "dev/images/lesson/1614753792629.png",
+              "description": "코치님이 해당 리플레이를 분석합니다.",
+              "shortDescription": "코치님이 해당 리플레이를 분석합니다."
+            },
+            {
+              "thumbnailUrl": "dev/images/lesson/1614753792918.png",
+              "description": "분석 내용을 바탕으로 개선 사항을 코칭합니다.",
+              "shortDescription": "분석 내용을 바탕으로 개선 사항을 코칭합니다."
+            }
+          ],
+          "duration": {
+            "unit": "HOURS",
+            "value": 1
+          },
+          "thumbnail": "images/lesson/img_lecture_replay.png"
+        },
+        "price": 1000,
+        "coachId": "5de8a6998057024270ccd1e3",
+        "isHide": false
+      },
+      {
+        "lessonProductId": "602e21e971a00c5bc86f528d",
+        "lesson": {
+          "lessonId": "603f2c79f2ad270001cfb49a",
+          "name": "화면 공유로 실시간 코칭",
+          "description": [
+            {
+              "thumbnailUrl": "dev/images/lesson/1614753748019.png",
+              "description": "먼저 화면 공유를 시작 후, 게임을 플레이 합니다.",
+              "shortDescription": "먼저 화면 공유를 시작 후, 게임을 플레이 합니다."
+            },
+            {
+              "thumbnailUrl": "dev/images/lesson/1614753748280.png",
+              "description": "게임 상황에 맞춰 실시간으로 플레이 방향을 코칭해 드립니다.",
+              "shortDescription": "게임 상황에 맞춰 실시간으로 코칭해 드립니다."
+            },
+            {
+              "thumbnailUrl": "dev/images/lesson/1614753733851.png",
+              "description": "게임이 종료된 후, 리플레이를 통해 간단히 한번 더 점검해 드립니다.",
+              "shortDescription": "종료 후, 리플레이를 통해 한번 더 점검해 드립니다."
+            }
+          ],
+          "duration": {
+            "unit": "HOURS",
+            "value": 1
+          },
+          "thumbnail": "images/lesson/img_lecture_sharescreen.png"
+        },
+        "price": 500,
+        "coachId": "5de8a6998057024270ccd1e3",
+        "isHide": false
+      },
+      {
+        "lessonProductId": "602e21e971a00c5bc86f528e",
+        "lesson": {
+          "lessonId": "603f2cdef2ad270001cfb49b",
+          "name": "1:1 라인전 코칭",
+          "description": [
+            {
+              "thumbnailUrl": "dev/images/lesson/1614753748019.png",
+              "description": "사용자 설정 게임에서 코치님과 만납니다.",
+              "shortDescription": "사용자 설정 게임에서 코치님과 만납니다."
+            },
+            {
+              "thumbnailUrl": "dev/images/lesson/1614753748280.png",
+              "description": "인게임 1:1 라인전 상황에서 코칭해 드립니다.",
+              "shortDescription": "인게임 1:1 라인전 상황에서 코칭해 드립니다."
+            },
+            {
+              "thumbnailUrl": "dev/images/lesson/1614753733851.png",
+              "description": "게임이 종료된 후, 플레이를 간단히 한번 더 점검해 드립니다.",
+              "shortDescription": "종료 후, 플레이를 한번 더 점검해 드립니다."
+            }
+          ],
+          "duration": {
+            "unit": "HOURS",
+            "value": 1
+          },
+          "thumbnail": "images/lesson/img_lecture_lineplay.png"
+        },
+        "price": 100,
+        "coachId": "5de8a6998057024270ccd1e3",
+        "isHide": false
+      }
+    ],
+    "historyThumbnail": "prod/images/coach/coach_profile_1.png",
+    "private": {
+      "isOfflineMode": false
+    }
+  }
+]
