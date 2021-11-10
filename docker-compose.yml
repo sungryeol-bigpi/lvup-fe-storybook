@@ -7,9 +7,10 @@ services:
     ports:
       - 6006:6006
     volumes:
-      - ./lvup-fe/public:/home/node/storybook/public
-      - ./lvup-fe/src:/home/node/storybook/src
+      - ./lvup-fe/services/lvup/public:/home/node/storybook/public
+      - ./lvup-fe/services/lvup/src:/home/node/storybook/services/lvup/src
+      - ./lvup-fe/shared:/home/node/storybook/shared
       - ./.storybook:/home/node/storybook/.storybook
       - ./stories:/home/node/storybook/stories
       - ./unit-test:/home/node/storybook/unit-test
-      - ./jest.config.js:/home/node/storybook/jest.config.js
+#      - ./jest.config.js:/home/node/storybook/jest.config.js
