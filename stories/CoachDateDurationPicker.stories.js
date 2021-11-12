@@ -12,4 +12,4 @@ const Template = (args, {argTypes}) => ({
   template: `<CoachDateDurationPicker v-model="duration" />`,
 });
 
-export const CoachDateDurationPickerStory = Template.bind({});
+export const Story = Template.bind({});
