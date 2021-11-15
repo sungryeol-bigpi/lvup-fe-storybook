@@ -11,11 +11,22 @@ const Template = (args, {argTypes}) => ({
   props: Object.keys(argTypes),
   template: `
 <div>
-  <TableAlt v-bind="$props">
+<TableAlt v-bind="$props" checkbox rowKey="settlementId">
   <TableColumn key="a" field="payoutDatetime" title="입금일" />
   <TableColumn key="b" field="memo" title="주문 메모" />
+  <TableColumn key="c" field="status" title="전환 상태" />
+  <TableColumn key="d" field="payoutAmount" title="주문 포인트" sort="" />
+  <TableColumn key="e" field="productName" title="상품명" />
+  <TableColumn key="f" field="userNickname" title="고객 닉네임" />
+  <TableColumn key="g" field="settlementNumber" title="주문 번호" />
+  <TableColumn key="h" title="버튼" :render="renderCell"/>
 </TableAlt>
-</div>`
+</div>`,
+  methods: {
+    renderCell({row, column,rowIndex}, h) {
+      return h('button', '샘플')
+    }
+  }
 });
 
 // {header: '주문 완료일', name: 'endDatetime'},
