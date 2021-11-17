@@ -1,9 +1,9 @@
-import Table from '@/views/components/coaching/settlement/Table.vue';
-import TableColumn from '@/views/components/coaching/settlement/TableColumn.vue';
+import Table from '@/views/components/coaching/sales/Table.vue';
+import TableColumn from '@/views/components/coaching/sales/TableColumn.vue';
 import {commaDecimal} from '@shared/utils/numberUtils';
 
 export default {
-  title: "coaching/settlement/Table",
+  title: "coaching/sales/Table",
   component: Table,
 };
 
