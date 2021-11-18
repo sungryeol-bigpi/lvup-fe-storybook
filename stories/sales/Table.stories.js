@@ -28,6 +28,7 @@ const Template = (args, {argTypes}) => ({
       return h('button', '샘플')
     },
     renderPointCell({row,column,rowIndex}, h) {
+      if (row.payoutAmount === 0) return '-';
       const content = [commaDecimal(row.payoutAmount), 'UP'].join(' ')
       return h('em', content)
     }
