@@ -1,7 +1,7 @@
 FROM node:14-alpine
 # sb init으로 나오는 커맨드를 그대로 사용
 RUN mkdir -p /home/node/storybook
-RUN mkdir -p /home/node/storybook/services/src
+RUN mkdir -p /home/node/storybook/services/coaching
 WORKDIR /home/node/storybook
 ENV LVUP_DIR=./lvup-fe/services/lvup/
 COPY ${LVUP_DIR}package.json ./package.json

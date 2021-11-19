@@ -7,8 +7,8 @@ services:
     ports:
       - 6006:6006
     volumes:
-      - ./lvup-fe/services/lvup/public:/home/node/storybook/public
-      - ./lvup-fe/services/lvup/src:/home/node/storybook/services/lvup/src
+      - ./lvup-fe/services/coaching/public:/home/node/storybook/public
+      - ./lvup-fe/services/coaching/src:/home/node/storybook/services/coaching/src
       - ./lvup-fe/shared:/home/node/storybook/shared
       - ./.storybook:/home/node/storybook/.storybook
       - ./stories:/home/node/storybook/stories

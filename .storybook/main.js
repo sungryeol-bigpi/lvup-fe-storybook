@@ -1,7 +1,7 @@
 const path = require("path");
-const pathLvup = path.resolve(__dirname, "../services/lvup/src");
+const pathCoaching = path.resolve(__dirname, "../services/coaching/src");
 const pathShared = path.resolve(__dirname, "../shared");
-const pathRoot = path.resolve(__dirname, '..')
+const pathRoot = path.resolve(__dirname, "..");
 // const pathStorybook = path.resolve(__dirname, "../stories");
 const { DefinePlugin } = require("webpack");
 const TARGET_NODE = process.env.WEBPACK_TARGET === "node";
@@ -31,8 +31,8 @@ const lessLoader = {
 @SCREEN_DM: ${VUE_APP_SCREEN_DM};
 @SCREEN_DL: ${VUE_APP_SCREEN_DL};`,
     lessOptions: {
-      paths: [path.resolve(__dirname, '../services/lvup')] // lvupPath 우선확인
-    }
+      paths: [path.resolve(__dirname, "../services/lvup")], // lvupPath 우선확인
+    },
   },
 };
 
@@ -46,12 +46,12 @@ module.exports = {
     config.module.rules.push({
       test: /\.less$/,
       use: ["vue-style-loader", "css-loader", lessLoader],
-      include: pathLvup,
+      include: pathCoaching,
     });
     config.resolve.alias["~@shared"] = pathShared;
     config.resolve.alias["@shared"] = pathShared;
-    config.resolve.alias['~@'] = pathRoot
-    config.resolve.alias["@"] = pathLvup;
+    config.resolve.alias["~@"] = pathRoot;
+    config.resolve.alias["@"] = pathCoaching;
     config.plugins.push(new DefinePlugin({ TARGET_NODE }));
     return config;
   },
