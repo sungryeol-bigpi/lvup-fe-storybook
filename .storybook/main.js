@@ -46,7 +46,7 @@ module.exports = {
     config.module.rules.push({
       test: /\.less$/,
       use: ["vue-style-loader", "css-loader", lessLoader],
-      include: pathCoaching,
+      // include: pathCoaching, // <-- 해당 코드가 있으면 Module parse failed: Unexpected character '@' 버그 발생
     });
     config.resolve.alias["~@shared"] = pathShared;
     config.resolve.alias["@shared"] = pathShared;
