@@ -3,7 +3,7 @@ FROM node:14-alpine
 RUN mkdir -p /home/node/storybook
 RUN mkdir -p /home/node/storybook/services/coaching
 WORKDIR /home/node/storybook
-ENV LVUP_DIR=./lvup-fe/services/lvup/
+ENV LVUP_DIR=./lvup-fe/services/coaching/
 COPY ${LVUP_DIR}package.json ./package.json
 # COPY ${LVUP_DIR}yarn.lock ./yarn.lock
 COPY ${LVUP_DIR}vue.config.js ./vue.config.js
