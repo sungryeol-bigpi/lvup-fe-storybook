@@ -13,4 +13,5 @@ services:
       - ./.storybook:/home/node/storybook/.storybook
       - ./stories:/home/node/storybook/stories
       - ./unit-test:/home/node/storybook/unit-test
+      - ./webpack.config.js:/home/node/storybook/webpack.config.js
 #      - ./jest.config.js:/home/node/storybook/jest.config.js

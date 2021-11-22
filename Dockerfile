@@ -3,7 +3,7 @@ FROM node:14-alpine
 RUN mkdir -p /home/node/storybook
 RUN mkdir -p /home/node/storybook/services/coaching
 WORKDIR /home/node/storybook
-ENV LVUP_DIR=./lvup-fe/services/lvup/
+ENV LVUP_DIR=./lvup-fe/services/coaching/
 COPY ${LVUP_DIR}package.json ./package.json
 # COPY ${LVUP_DIR}yarn.lock ./yarn.lock
 COPY ${LVUP_DIR}vue.config.js ./vue.config.js
@@ -12,5 +12,4 @@ COPY ${LVUP_DIR}.env ./.env
 COPY ${LVUP_DIR}.env.development ./.env.development
 RUN npx sb init -f
 RUN rm -rf stories
-RUN yarn add -D dotenv jest babel-jest vue-jest @vue/test-utils
-CMD yarn storybook -s ./public
+RUN rm jest.config.js

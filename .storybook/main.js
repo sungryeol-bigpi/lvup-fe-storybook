@@ -49,8 +49,8 @@ module.exports = {
       include: pathCoaching,
     });
     config.resolve.alias["~@shared"] = pathShared;
-    config.resolve.alias["@shared"] = pathShared;
     config.resolve.alias["~@"] = pathRoot;
+    config.resolve.alias["@shared"] = pathShared;
     config.resolve.alias["@"] = pathCoaching;
     config.plugins.push(new DefinePlugin({ TARGET_NODE }));
     return config;
