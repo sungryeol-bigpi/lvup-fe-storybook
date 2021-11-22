@@ -1,8 +1,10 @@
 const path = require("path");
-const pathRoot = path.resolve(__dirname, "../src");
-const pathStorybook = path.resolve(__dirname, '../stories');
-const { DefinePlugin } = require('webpack')
-const TARGET_NODE = process.env.WEBPACK_TARGET === 'node';
+const pathCoaching = path.resolve(__dirname, "../services/coaching/src");
+const pathShared = path.resolve(__dirname, "../shared");
+const pathRoot = path.resolve(__dirname, "..");
+// const pathStorybook = path.resolve(__dirname, "../stories");
+const { DefinePlugin } = require("webpack");
+const TARGET_NODE = process.env.WEBPACK_TARGET === "node";
 
 require("dotenv").config();
 
@@ -17,6 +19,23 @@ const {
   VUE_APP_SCREEN_DL,
 } = process.env;
 
+const lessLoader = {
+  loader: "less-loader",
+  options: {
+    additionalData: `
+@SCREEN_MM: ${VUE_APP_SCREEN_MM};
+@SCREEN_ML: ${VUE_APP_SCREEN_ML};
+@SCREEN_TP: ${VUE_APP_SCREEN_TP};
+@SCREEN_TL: ${VUE_APP_SCREEN_TL};
+@SCREEN_DS: ${VUE_APP_SCREEN_DS};
+@SCREEN_DM: ${VUE_APP_SCREEN_DM};
+@SCREEN_DL: ${VUE_APP_SCREEN_DL};`,
+    lessOptions: {
+      paths: [path.resolve(__dirname, "../services/lvup")], // lvupPath 우선확인
+    },
+  },
+};
+
 module.exports = {
   stories: [
     "../stories/**/*.stories.mdx",
@@ -24,36 +43,16 @@ module.exports = {
   ],
   addons: ["@storybook/addon-links", "@storybook/addon-essentials"],
   async webpackFinal(config, webpack) {
-    // vue.config.js에서 설정 복사해옴
     config.module.rules.push({
       test: /\.less$/,
-      use: [
-        "vue-style-loader",
-        "css-loader",
-        {
-          loader: "less-loader",
-          options: {
-            additionalData: `
-            @SCREEN_MM: ${VUE_APP_SCREEN_MM};
-            @SCREEN_ML: ${VUE_APP_SCREEN_ML};
-            @SCREEN_TP: ${VUE_APP_SCREEN_TP};
-            @SCREEN_TL: ${VUE_APP_SCREEN_TL};
-            @SCREEN_DS: ${VUE_APP_SCREEN_DS};
-            @SCREEN_DM: ${VUE_APP_SCREEN_DM};
-            @SCREEN_DL: ${VUE_APP_SCREEN_DL};
-          `,
-          },
-        },
-      ],
-      include: pathRoot,
+      use: ["vue-style-loader", "css-loader", lessLoader],
+      include: pathCoaching,
     });
-    config.resolve.alias['@graphics'] = path.join(pathRoot, 'views', 'graphics');
-    config.resolve.alias['@mocks'] = path.join(pathStorybook, 'mock');
-    config.resolve.alias['@samples'] = path.join(pathStorybook, 'sample');
-    config.resolve.alias['@utils'] = path.join(pathStorybook, 'util');
+    config.resolve.alias["~@shared"] = pathShared;
+    config.resolve.alias["@shared"] = pathShared;
     config.resolve.alias["~@"] = pathRoot;
-    config.resolve.alias["@"] = pathRoot;
-    config.plugins.push(new DefinePlugin({ TARGET_NODE }))
+    config.resolve.alias["@"] = pathCoaching;
+    config.plugins.push(new DefinePlugin({ TARGET_NODE }));
     return config;
   },
 };

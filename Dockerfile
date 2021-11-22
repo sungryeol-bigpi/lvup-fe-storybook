@@ -1,14 +1,15 @@
 FROM node:14-alpine
 # sb init으로 나오는 커맨드를 그대로 사용
 RUN mkdir -p /home/node/storybook
+RUN mkdir -p /home/node/storybook/services/coaching
 WORKDIR /home/node/storybook
-ENV FE_DIR=./lvup-fe/
-COPY ${FE_DIR}package.json ./package.json
-COPY ${FE_DIR}yarn.lock ./yarn.lock
-COPY ${FE_DIR}vue.config.js ./vue.config.js
-COPY ${FE_DIR}babel.config.js ./babel.config.js
-COPY ${FE_DIR}.env ./.env
-COPY ${FE_DIR}.env.development ./.env.development
+ENV LVUP_DIR=./lvup-fe/services/lvup/
+COPY ${LVUP_DIR}package.json ./package.json
+# COPY ${LVUP_DIR}yarn.lock ./yarn.lock
+COPY ${LVUP_DIR}vue.config.js ./vue.config.js
+COPY ${LVUP_DIR}babel.config.js ./babel.config.js
+COPY ${LVUP_DIR}.env ./.env
+COPY ${LVUP_DIR}.env.development ./.env.development
 RUN npx sb init -f
 RUN rm -rf stories
 RUN yarn add -D dotenv jest babel-jest vue-jest @vue/test-utils
