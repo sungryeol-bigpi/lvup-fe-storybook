@@ -31,7 +31,7 @@ const lessLoader = {
 @SCREEN_DM: ${VUE_APP_SCREEN_DM};
 @SCREEN_DL: ${VUE_APP_SCREEN_DL};`,
     lessOptions: {
-      paths: [path.resolve(__dirname, "../services/lvup")], // lvupPath 우선확인
+      paths: [path.resolve(__dirname, "../services/coaching")], // lvupPath 우선확인 -> coachingPath 우선 확인
     },
   },
 };
