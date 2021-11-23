@@ -12,7 +12,7 @@ const Template = (args, {argTypes}) => ({
   props: Object.keys(argTypes),
   template: `
 <div>
-<Table v-bind="$props" checkbox rowKey="settlementId">
+<Table v-bind="$props" checkbox rowKey="settlementId" @select="onSelect" @select-all="onSelectAll" @sort="onSort">
   <TableColumn key="a" field="payoutDatetime" title="입금일" />
   <TableColumn key="b" field="memo" title="주문 메모" />
   <TableColumn key="c" field="status" title="전환 상태" />
@@ -31,6 +31,15 @@ const Template = (args, {argTypes}) => ({
       if (row.payoutAmount === 0) return '-';
       const content = [commaDecimal(row.payoutAmount), 'UP'].join(' ')
       return h('em', content)
+    },
+    onSelect(params) {
+      console.log('select', params)
+    },
+    onSelectAll(params) {
+      console.log('select-all', params)
+    },
+    onSort(params) {
+      console.log('sort', params)
     }
   }
 });
