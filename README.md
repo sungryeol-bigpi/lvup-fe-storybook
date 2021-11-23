@@ -27,6 +27,9 @@ docker-compose run storybook yarn jest
 docker-compose run storybook yarn jest --watchAll
 # 특정 파일만 유닛 테스트
 docker-compose run storybook yarn jest sample.test.js
+# 파일 구조 트러블슈팅(도커 사용이 익숙하지 않을 때)
+docker-compose -f docker-compose.yml -f docker-compose.troubleshooting.yml up
+docker container exec -it ${CONTAINER_ID} /bin/sh
 ```
 3. 캐시로 인한 에러를 방지하기 위해, 작업이 완료되면 생성된 임시 컨테이너를 정기적으로 삭제해준다.
 ```sh
