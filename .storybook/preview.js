@@ -1,6 +1,7 @@
 import VueEasytable from 'vue-easytable'
 import Vue from 'vue';
-Vue.use(VueEasytable)
+// less 관련 오류로 인해 storybook에서 popover 현재는 사용 불가능
+import popover from '@shared/plugins/popover';
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -10,4 +11,15 @@ export const parameters = {
       date: /Date$/,
     },
   },
+
 }
+
+export const decorators = [(story) => {
+  Vue.use(VueEasytable);
+  Vue.use(popover)
+  Vue.prototype.$t = arg => `${arg}`
+  return {
+    components: { story },
+    template: '<story />'
+  };
+}]

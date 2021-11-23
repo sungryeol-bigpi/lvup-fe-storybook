@@ -12,5 +12,4 @@ COPY ${LVUP_DIR}.env ./.env
 COPY ${LVUP_DIR}.env.development ./.env.development
 RUN npx sb init -f
 RUN rm -rf stories
-RUN yarn add -D dotenv jest babel-jest vue-jest @vue/test-utils
-CMD yarn storybook -s ./public
+RUN rm jest.config.js

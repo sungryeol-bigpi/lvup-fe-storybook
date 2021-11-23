@@ -49,8 +49,8 @@ module.exports = {
       // include: pathCoaching, // <-- 해당 코드가 있으면 Module parse failed: Unexpected character '@' 버그 발생
     });
     config.resolve.alias["~@shared"] = pathShared;
-    config.resolve.alias["@shared"] = pathShared;
     config.resolve.alias["~@"] = pathRoot;
+    config.resolve.alias["@shared"] = pathShared;
     config.resolve.alias["@"] = pathCoaching;
     config.plugins.push(new DefinePlugin({ TARGET_NODE }));
     return config;
